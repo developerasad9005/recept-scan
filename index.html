@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Special+Elite&display=swap');
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#ddd]">
+    <main>
+        <div class="container mx-auto flex justify-center items-center">
+            <section class="flex flex-col lg:flex-row gap-20 justify-center items-center h-[100vh]">
+                <div class="">
+                    <div class="">
+                        <div class="flex flex-col bg-white rounded shadow-lg p-12">
+                            <h1 class="text-black text-2xl mb-5">Please Update data here</h1>
+                            <label class="font-semibold text-lg" for="usernameField">First Product Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" placeholder="Enter your product Prize" id="firstPrize">
+                            <label class="font-semibold text-lg mt-3">Second Product Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" placeholder="Enter your product Prize" id="secondPrize">
+
+                            <label class="font-semibold text-lg" for="usernameField">Third Product Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" placeholder="Enter your product Prize" id="thirdPrize">
+                            <label class="font-semibold text-lg mt-3" for="date">Date</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="date" name="date" id="date">
+                            <label class="font-semibold text-lg mt-3" for="date">Expire Date</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="date" name="date" id="exDate">
+                            <label class="font-semibold text-lg mt-3" for="appt">Time</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="time" min="09:00" max="18:00" id="time" name="appt">
+                            <button
+                                class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700" id="submit">Update</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right bg-red-300 p-20 flex justify-center">
+                    <section class="bg-[#ffffff] py-10 px-6 w-[500px]">
+                        <div>
+                            <div class="flex justify-center">
+                                <img src="image/logo.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-black font-semibold text-center text-lg"><span id="dateChange">2024/02/08</span>
+                                    <span id="timeChange">7:21 PM</span> EXPIRES <span id="exDateChange">2024/05/08</span></h1>
+                            </div>
+                            <div class="flex justify-center h-[60px] mt-5">
+                                <img src="image/b.png" alt="">
+                            </div>
+                            <div class="mt-10 flex flex-row justify-between">
+                                <div>
+                                    <h1 class="mb-[-10px] text-black font-semibold">CLOTHING</h1>
+                                    <h1 class="text-black font-semibold">042130186</h1>
+                                </div>
+                                <div>
+                                   <h1 class="text-black font-semibold">DNZN CARGO</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold">ST</h1>
+                                 </div>
+                                 <div>
+                                    <h1 class="text-black font-semibold">$ <span id="firstPrizeChange">100</span></h1>
+                                 </div>
+
+                            </div>
+                            <div class="flex flex-row justify-between">
+                                <div>
+                                    <h1 class="mb-[-10px] text-black font-semibold">GROCERY</h1>
+                                    <h1 class="text-black font-semibold">231101523</h1>
+                                </div>
+                                <div>
+                                   <h1 class="text-black font-semibold">DUNKINDONUTS</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold ml-[-22px]">FN</h1>
+                                 </div>
+                                 <div>
+                                    <h1 class="text-black font-semibold">$ <span id="secondPrizeChange">150</span></h1>
+                                 </div>
+
+                            </div>
+
+                            <div class="flex flex-row justify-between">
+                                <div>
+                                    <h1 class="text-black font-semibold">284020006</h1>
+                                </div>
+                                <div>
+                                   <h1 class="text-black font-semibold">MP 2 PC MILK</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold ml-[3px]">FN</h1>
+                                 </div>
+                                 <div>
+                                    <h1 class="text-black font-semibold">$ <span id="thirdPrizeChange">200</span></h1>
+                                 </div>
+
+                            </div>
+                            <div>
+                                <h1 class="text-black font-semibold text-right mt-4">SUBTOTAL <span class="ml-7"></span>  $<span id="subTotalChange">450</span></h1>
+                                <div>
+                                    <h1 class="text-black font-semibold text-right">T = CO TAX 5.0000%<span class="mr-4"></span>   $<span id="taxChange">48.01</span></h1>
+                                    
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold text-right">TOTAL<span class="mr-4"></span>   $<span id="totalChange">498.01</span></h1>
+                                    
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold text-right">*1767 DEBIT COST<span class="mr-4"></span>$<span id="devitChange">498.01</span></h1>
+                                    <h1 class="text-black font-semibold text-right">AID:A0000000980840</h1>
+                                    <h1 class="text-black font-semibold text-right mr-[90px]">US DEBIT</h1>
+                                </div>
+                                <h1 class="text-black font-semibold text-center mt-10">REC#2-9117-0271-0160-2484-6 VCD#759-281-546</h1>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- https://source.unsplash.com/category/food -->
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+          const date = document.getElementById("date").value;
+          const exDate = document.getElementById("exDate").value;
+          const time = document.getElementById("time").value;
+          const firstPrize = document.getElementById("firstPrize").value;
+          const secondPrize = document.getElementById("secondPrize").value;
+          const thirdPrize = document.getElementById("thirdPrize").value;
+          const subtotal = Number(firstPrize) + Number(secondPrize) + Number(thirdPrize);
+          const tax = (subtotal * 5)/100;
+          const total = subtotal + tax;
+          document.getElementById("firstPrizeChange").innerText = firstPrize;  
+          document.getElementById("secondPrizeChange").innerText = secondPrize;  
+          document.getElementById("thirdPrizeChange").innerText = thirdPrize;  
+          document.getElementById("dateChange").innerText = date;
+          document.getElementById("exDateChange").innerText = exDate;
+          document.getElementById("timeChange").innerText = time;
+          document.getElementById("subTotalChange").innerText = subtotal;
+          document.getElementById("taxChange").innerText = tax;
+          document.getElementById("totalChange").innerText = total;
+          document.getElementById("devitChange").innerText = total;
+        });
+      </script>
+</body>
+
+</html>
