@@ -14,6 +14,11 @@
         * {
             font-family: 'Open Sans', sans-serif;
         }
+        .receptBg{
+            background: url(image/bg.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
     </style>
 </head>
 
@@ -42,10 +47,10 @@
                             <input
                                 class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
                                 type="date" name="date" id="date">
-                            <label class="font-semibold text-lg mt-3" for="date">Expire Date</label>
+                            <!-- <label class="font-semibold text-lg mt-3" for="date">Expire Date</label>
                             <input
                                 class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
-                                type="date" name="date" id="exDate">
+                                type="date" name="date" id="exDate"> -->
                             <label class="font-semibold text-lg mt-3" for="appt">Time</label>
                             <input
                                 class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
@@ -55,15 +60,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="right bg-red-300 p-20 flex justify-center">
-                    <section class="bg-[#ffffff] py-10 px-6 w-[500px]">
+                <div class="right p-32 flex justify-center receptBg">
+                    <section class="bg-[#f3f1f1] py-10 px-6 w-[500px]">
                         <div>
                             <div class="flex justify-center">
                                 <img src="image/logo.png" alt="">
                             </div>
                             <div>
                                 <h1 class="text-black font-semibold text-center text-lg"><span id="dateChange">2024/02/08</span>
-                                    <span id="timeChange">7:21 PM</span> EXPIRES <span id="exDateChange">2024/05/08</span></h1>
+                                    <span id="timeChange">7:21 PM</span> </h1>
+                                    <!-- EXPIRES <span id="exDateChange">2024/05/08</span> -->
                             </div>
                             <div class="flex justify-center h-[60px] mt-5">
                                 <img src="image/b.png" alt="">
@@ -145,7 +151,7 @@
     <script>
         document.getElementById("submit").addEventListener("click", function () {
           const date = document.getElementById("date").value;
-          const exDate = document.getElementById("exDate").value;
+        //   const exDate = document.getElementById("exDate").value;
           const time = document.getElementById("time").value;
           const firstPrize = document.getElementById("firstPrize").value;
           const secondPrize = document.getElementById("secondPrize").value;
@@ -157,7 +163,7 @@
           document.getElementById("secondPrizeChange").innerText = secondPrize;  
           document.getElementById("thirdPrizeChange").innerText = thirdPrize;  
           document.getElementById("dateChange").innerText = date;
-          document.getElementById("exDateChange").innerText = exDate;
+        //   document.getElementById("exDateChange").innerText = exDate;
           document.getElementById("timeChange").innerText = time;
           document.getElementById("subTotalChange").innerText = subtotal;
           document.getElementById("taxChange").innerText = tax;
