@@ -91,7 +91,7 @@
                             <div class="mt-10 flex flex-row justify-between">
                                 <div>
                                     <h1 class="mb-[-10px] text-black font-semibold">CLOTHING</h1>
-                                    <h1 class="text-black font-semibold">042130186</h1>
+                                    <h1 class="text-black font-semibold" id="random1">042130186</h1>
                                 </div>
                                 <div>
                                     <h1 class="text-black font-semibold">DNZN CARGO</h1>
@@ -107,7 +107,7 @@
                             <div class="flex flex-row justify-between">
                                 <div>
                                     <h1 class="mb-[-10px] text-black font-semibold">GROCERY</h1>
-                                    <h1 class="text-black font-semibold">231101523</h1>
+                                    <h1 class="text-black font-semibold" id="random2">231101523</h1>
                                 </div>
                                 <div>
                                     <h1 class="text-black font-semibold">DUNKINDONUTS</h1>
@@ -123,7 +123,7 @@
 
                             <div class="flex flex-row justify-between">
                                 <div>
-                                    <h1 class="text-black font-semibold">284020006</h1>
+                                    <h1 class="text-black font-semibold" id="random3">284020006</h1>
                                 </div>
                                 <div>
                                     <h1 class="text-black font-semibold">MP 2 PC MILK</h1>
@@ -150,13 +150,12 @@
 
                                 </div>
                                 <div>
-                                    <h1 class="text-black font-semibold text-right">*1767 DEBIT COST<span
+                                    <h1 class="text-black font-semibold text-right">*<span id="random14">1767</span> DEBIT COST<span
                                             class="mr-4"></span>$<span id="devitChange">1010.01</span></h1>
-                                    <h1 class="text-black font-semibold text-right">AID:A0000000980840</h1>
+                                    <h1 class="text-black font-semibold text-right">AID:A<span id="random12">0000000980840</span></h1>
                                     <h1 class="text-black font-semibold text-right mr-[90px]">US DEBIT</h1>
                                 </div>
-                                <h1 class="text-black font-semibold text-center mt-10">REC#2-9117-0271-0160-2484-6
-                                    VCD#759-281-546</h1>
+                                <h1 class="text-black font-semibold text-center mt-10">REC#<span id="random13">2</span>-<span id="random4">9117</span>-<span id="random5">0271</span>-<span id="random6">0160</span>-<span id="random7">2484</span>-<span id="random8">6</span>VCD#<span id="random9">759</span>-<span id="random10">281</span>-<span id="random11">546</span></h1>
                             </div>
                         </div>
                     </section>
@@ -178,6 +177,20 @@
             const subtotal = Number(firstPrize) + Number(secondPrize) + Number(thirdPrize);
             const tax = (subtotal * 5) / 100;
             const total = subtotal + tax;
+            document.getElementById("random1").innerHTML = Math.floor(Math.random() * 999999999);
+            document.getElementById("random2").innerHTML = Math.floor(Math.random() * 999999999);
+            document.getElementById("random3").innerHTML = Math.floor(Math.random() * 999999999);
+            document.getElementById("random4").innerHTML = Math.floor(Math.random() * 9999);
+            document.getElementById("random5").innerHTML = Math.floor(Math.random() * 9999);
+            document.getElementById("random6").innerHTML = Math.floor(Math.random() * 9999);
+            document.getElementById("random7").innerHTML = Math.floor(Math.random() * 9999);
+            document.getElementById("random8").innerHTML = Math.floor(Math.random() * 9);
+            document.getElementById("random9").innerHTML = Math.floor(Math.random() * 999);
+            document.getElementById("random10").innerHTML = Math.floor(Math.random() * 999);
+            document.getElementById("random11").innerHTML = Math.floor(Math.random() * 999);
+            document.getElementById("random12").innerHTML = Math.floor(Math.random() * 9999999999999);
+            document.getElementById("random13").innerHTML = Math.floor(Math.random() * 9);
+            document.getElementById("random14").innerHTML = Math.floor(Math.random() * 9999);
             document.getElementById("firstPrizeChange").innerText = firstPrize;
             document.getElementById("secondPrizeChange").innerText = secondPrize;
             document.getElementById("thirdPrizeChange").innerText = thirdPrize;
